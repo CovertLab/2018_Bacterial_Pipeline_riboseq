@@ -15,5 +15,11 @@ RUN apt install tree
 
 RUN pip install jupyter "biopython==1.68" pandas seaborn sklearn plotly bcbio-gff
 
-# COMMAND TO START JUPYTER NOTEBOOK
-# /usr/local/share/bcbio/anaconda/bin/python -m jupyter notebook --ip 0.0.0.0 --no-browser --allow-root Github-Ribo_Density.ipynb
+
+# To run this container:
+#
+#     docker run -it -p 8888:8888 -v /path/to/repo/2018_Bacterial_Pipeline_riboseq:/pipeline greenlab:latest bash
+
+# Once in the container, to start the jupyter notebooks:
+#
+#     /usr/local/share/bcbio/anaconda/bin/python -m jupyter notebook --ip 0.0.0.0 --no-browser --allow-root Github-Ribo_Density.ipynb

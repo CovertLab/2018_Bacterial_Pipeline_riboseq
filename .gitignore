@@ -1,3 +1,6 @@
 *.pyc
 .python-version
 .ipynb_checkpoints
+/library
+/libraries
+/data
